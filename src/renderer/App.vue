@@ -18,7 +18,6 @@ import { computed, nextTick, onMounted, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 
-import TrafficWarningDrawer from '@/components/TrafficWarningDrawer.vue';
 import { usePlayerStore } from '@/store/modules/player';
 import { useSettingsStore } from '@/store/modules/settings';
 import { isElectron, isLyricWindow } from '@/utils';
