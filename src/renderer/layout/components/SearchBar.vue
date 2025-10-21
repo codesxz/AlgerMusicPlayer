@@ -157,7 +157,6 @@ import { getUserDetail } from '@/api/login';
 import { getSearchSuggestions } from '@/api/search';
 import alipay from '@/assets/alipay.png';
 import wechat from '@/assets/wechat.png';
-import Coffee from '@/components/Coffee.vue';
 import { SEARCH_TYPE, SEARCH_TYPES, USER_SET_OPTIONS } from '@/const/bar-const';
 import { useZoom } from '@/hooks/useZoom';
 import { useSearchStore } from '@/store/modules/search';
