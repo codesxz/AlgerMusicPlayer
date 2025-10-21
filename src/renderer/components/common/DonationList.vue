@@ -24,16 +24,6 @@
       </div>
     </div>
 
-    <div class="header-container">
-      <h3 class="section-title">{{ t('donation.title') }}</h3>
-      <n-button secondary round size="small" :loading="isLoading" @click="fetchDonors">
-        <template #icon>
-          <i class="ri-refresh-line"></i>
-        </template>
-        {{ t('donation.refresh') }}
-      </n-button>
-    </div>
-
     <div class="donation-grid" :class="{ 'grid-expanded': isExpanded }">
       <div
         v-for="donor in displayDonors"
