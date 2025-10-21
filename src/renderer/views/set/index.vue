@@ -543,43 +543,6 @@
                 </n-button>
               </div>
             </div>
-
-            <div
-              class="set-item cursor-pointer hover:text-green-500 hover:bg-green-950 transition-all"
-              @click="openAuthor"
-            >
-              <coffee>
-                <div>
-                  <div class="set-item-title">{{ t('settings.about.author') }}</div>
-                  <div class="set-item-content">{{ t('settings.about.authorDesc') }}</div>
-                </div>
-              </coffee>
-              <div>
-                <n-button size="small" @click="openAuthor">
-                  <i class="ri-github-line"></i>{{ t('settings.about.gotoGithub') }}
-                </n-button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 捐赠支持 -->
-        <div id="donation" ref="donationRef" class="settings-section">
-          <div class="settings-section-title">{{ t('settings.sections.donation') }}</div>
-          <div class="settings-section-content">
-            <div class="set-item">
-              <div>
-                <div class="set-item-title">{{ t('settings.sections.donation') }}</div>
-                <div class="set-item-content">{{ t('donation.message') }}</div>
-              </div>
-              <n-button text @click="toggleDonationList">
-                <template #icon>
-                  <i :class="isDonationListVisible ? 'ri-eye-line' : 'ri-eye-off-line'" />
-                </template>
-                {{ isDonationListVisible ? t('common.hide') : t('common.show') }}
-              </n-button>
-            </div>
-            <donation-list v-if="isDonationListVisible" />
           </div>
         </div>
       </div>
@@ -624,7 +587,6 @@ import { useI18n } from 'vue-i18n';
 
 import localData from '@/../main/set.json';
 import { getUserDetail } from '@/api/login';
-import Coffee from '@/components/Coffee.vue';
 import DonationList from '@/components/common/DonationList.vue';
 import PlayBottom from '@/components/common/PlayBottom.vue';
 import LanguageSwitcher from '@/components/LanguageSwitcher.vue';
