@@ -18,6 +18,10 @@ export default defineConfig({
       '@i18n': resolve('src/i18n')
     }
   },
+  build: {
+    outDir: resolve('dist'),  // 确保输出到根目录的 dist
+    emptyOutDir: true
+  },
   plugins: [
     vue(),
     viteCompression(),
