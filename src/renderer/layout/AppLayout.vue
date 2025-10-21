@@ -1,7 +1,6 @@
 <template>
   <div class="layout-page">
     <div id="layout-main" class="layout-main">
-      <title-bar />
       <div class="layout-main-page">
         <!-- 侧边菜单栏 -->
         <app-menu v-if="!settingsStore.isMobile" class="menu" :menus="menuStore.menus" />
